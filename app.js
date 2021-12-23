@@ -11,4 +11,4 @@ app.set("view engine", "ejs");
 require("./middlewares");
 require("./modules");
 
-require("./services/startupService").initializer();
+require("./services/startupService").initializeServer();
