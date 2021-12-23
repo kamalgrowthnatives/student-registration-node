@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+  </head>
+  <style>
+    form input {
+      display: block;
+    }
+  </style>
+  <body>
+    <a href="/student_registration"><button>Student Info</button></a>
+    <h1>New Student</h1>
+    <form
+      action="/create"
+      style="border: 1px solid #ccc; display: block"
+      method="POST"
+    >
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr />
+        <input type="text" placeholder="Enter Name" id="name" name="name"/ >
+        <input type="text" placeholder="Enter Phone" id="phone" name="phone" />
+        <input type="text" placeholder="Enter Email" id="email" name="email" />
+        <input type="text" placeholder="Enter City" id="city" name="city" />
+        <select name="courses" id="courses">
+          <option value="Animation and Design">Animation and Design</option>
+          <option value="Commerce">Commerce</option>
+          <option value="Arts">Arts</option>
+          <option value="Computer IT">Computer IT</option>
+          <option value="Hospitality">Hospitality</option>
+        </select>
+
+        <select name="sports" id="sports">
+          <option value="Cricket">Cricket</option>
+          <option value="BasketBall">BasketBall</option>
+          <option value="Carrom">Carrom</option>
+          <option value="Football">Football</option>
+          <option value="Table Tennis">Table Tennis</option>
+          <option value="Hockey">Hockey</option>
+        </select>
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
